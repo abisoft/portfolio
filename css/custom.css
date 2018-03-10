@@ -15,3 +15,27 @@
     font-family: HelveticaNeue-Light, Helvetica Neue Light;
     color: dimgrey;
 }
+
+.post {
+  position: relative;
+}
+
+.post:hover .bottom-content {
+    opacity: 1;
+}
+
+.bottom-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  flex-direction: column;
+}
